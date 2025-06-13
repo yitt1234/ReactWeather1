@@ -133,7 +133,7 @@ function weather(name) {
 
 
     $.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=710a8a155ade8daf23d7240bf1ca4d6f&units=metric`,
+        `https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=&units=metric`,
         function (data) {
             console.log(data);
             $('.temp').html(" " + data.main.temp + 'C');
